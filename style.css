@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.clearfix::after{
+    display:table;
+    content:'';
+    clear:both;
+}
+
+.container{
+    border:1px solid black;
+    width:700px;
+    height:400px;
+    /* background-color: green; */
+
+}
+
+.video{
+    background-image: url(https://i.ytimg.com/vi/roS6oFjCDhc/maxresdefault.jpg);
+    background-size: cover;
+    width:70%;
+    height:100%;
+    background-color: yellow;
+    float:left;
+    position:relative;
+
+}
+
+.correlati{
+    width:30%;
+    height:100%;
+    float:left;
+  /*   background-color: blue; */
+}
+
+.player{
+    border-top: 3px solid red;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    /* background-color: black; */
+}
+.img_correlate>img{
+    width:50%;
+}
+
+.img_correlate>img, .img_correlate>span{
+    padding:5px;
+    float:left;
+    width:50%;
+}
+
+.player>img{
+    margin:5px;
+    width:20px;
+    height:20px;
+}
